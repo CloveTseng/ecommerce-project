@@ -1,0 +1,68 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-200;
+  padding: $space-6;
+  margin-top: $space-6;
+  .cta-text {
+    font-size: 20px;
+    text-wrap: nowrap;
+    color: $neutral-900;
+    @include pad {
+      font-size: 24px;
+    }
+  }
+  .btn {
+    margin-left: $space-4;
+  }
+}
+footer {
+  padding: $space-8 0;
+  background-color: $neutral-100;
+  @include pad {
+    padding: $space-16 0;
+  }
+}
+.footer-link {
+  @include mw-1320;
+  padding-bottom: $space-6;
+  border-bottom: 1px solid $neutral-300;
+
+  .footer-list {
+    padding: 0 $space-3;
+    li {
+      padding: $space-3 0;
+    }
+    .list-item {
+      font-weight: 500;
+      &:hover {
+        color: $primary-400;
+      }
+    }
+
+    @include pad {
+      display: flex;
+      align-items: center;
+  
+      li + li {
+      margin-left: $space-10;
+    }
+    }
+  }
+  @include pad {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.copyright {
+  padding-top: $space-8;
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: $neutral-600;
+  }
+  p + p {
+    margin-top: $space-1;
+  }
+}

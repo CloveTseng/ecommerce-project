@@ -1,0 +1,13 @@
+.btn {
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: $radius-sm;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-wrap: nowrap;
+  border: 0px;
+}
+.btn-dark {
+  color: $neutral-white;
+  background-color: $neutral-900;
+}

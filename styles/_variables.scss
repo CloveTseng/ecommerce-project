@@ -1,0 +1,39 @@
+@mixin pad {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktops {
+  @media (min-width: 1200px){
+    @content;
+  }
+}
+@mixin mw-1320 {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+$primary-100: #f5fee7;
+$primary-200: #E8FEC5;
+$primary-400: #57a203;
+$neutral-100: #f8f9fa;
+$neutral-300: #dee2e6;
+$neutral-600: #6c757d;
+$neutral-900: #212529;
+$neutral-white: #fff;
+
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 12px;
+$space-4: 16px;
+$space-6: 24px;
+$space-8: 32px;
+$space-10: 40px;
+$space-12: 48px;
+$space-16: 64px;
+
+$radius-sm: 4px;
+$radius-md: 12px;
+$radius-rounded: 1000px;

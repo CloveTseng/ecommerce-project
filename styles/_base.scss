@@ -1,0 +1,45 @@
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}
+html {
+  font-size: 16px;
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  object-fit: cover;
+}
+a {
+  color: $neutral-900;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+span {
+  letter-spacing: 0.05em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+.container {
+  padding-left: $space-3;
+  padding-right: $space-3;
+  margin: auto;
+}
+.d-flex {
+  display: flex;
+}

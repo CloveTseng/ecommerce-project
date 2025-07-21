@@ -1,0 +1,44 @@
+header {
+  @include mw-1320;
+  display: flex;
+  padding: 13px 0;
+
+  .p-3 {
+    padding: $space-3;
+  }
+  @include pad {
+    padding: 16px 0;
+  }
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-list {
+    display: none;
+    margin-left: $space-12;
+    
+    li {
+      padding: $space-3 0;
+    }
+
+    & li + li {
+      margin-left: $space-10;
+    }
+
+    .list-item {
+      font-weight: 500;
+      &:hover {
+        color: $primary-400;
+      }
+    }
+
+    @include pad {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
