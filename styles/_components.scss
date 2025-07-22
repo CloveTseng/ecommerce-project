@@ -1,13 +1,48 @@
 .btn {
-  font-weight: 500;
-  padding: 8px 16px;
-  border-radius: $radius-sm;
   font-size: 16px;
+  font-weight: 500;
   letter-spacing: 0.05em;
+  padding: $space-2 $space-4;
+  border-radius: $radius-sm;
   text-wrap: nowrap;
   border: 0px;
+  @include pad {
+    padding: $space-3 $space-6;
+  }
 }
 .btn-dark {
   color: $neutral-white;
   background-color: $neutral-900;
+}
+.btn-primary {
+  color: $neutral-900;
+  background-color: $primary-300;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  .pagination-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $space-10;
+    height: $space-10;
+    color: $neutral-900;
+    margin: 32px 0 16px 0;
+  }
+
+  :first-child {
+    margin-right: 4px;
+    color: $neutral-600;
+  }
+  :last-child {
+    margin-left: 4px;
+  }
+  :nth-child(2) {
+    background-color: $primary-300;
+    font-weight: 500;
+  }
 }

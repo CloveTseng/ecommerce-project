@@ -1,0 +1,15 @@
+.products {
+  @include mw-1320;
+}
+.breadcrumb {
+  display: flex;
+}
+.products-navbar {
+  display: none;
+}
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 24px;
+}
