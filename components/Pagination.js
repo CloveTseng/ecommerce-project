@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const Pagination = () => {
   return (
     <ul className='pagination'>
-      <li className='pagination-item'><IoIosArrowBack /></li>
+      <li className='pagination-item'><IoIosArrowBack width={20}/></li>
       <li className='pagination-item'>1</li>
       <li className='pagination-item'>2</li>
       <li className='pagination-item'>3</li>

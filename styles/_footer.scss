@@ -16,6 +16,9 @@
   .btn {
     margin-left: $space-4;
   }
+  @include desktops {
+    margin-top: $space-12;
+  }
 }
 footer {
   padding: $space-8 0;

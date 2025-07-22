@@ -22,27 +22,73 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-
+  gap: $space-2;
+  padding: $space-8 0 $space-4 0;
+  @include desktops {
+    padding: $space-12 0 $space-8 0;
+  }
   .pagination-item {
     display: flex;
     justify-content: center;
     align-items: center;
     width: $space-10;
     height: $space-10;
-    color: $neutral-900;
-    margin: 32px 0 16px 0;
+    cursor: pointer;
+    &:hover {
+      background-color: $neutral-100;
+    }
   }
-
-  :first-child {
-    margin-right: 4px;
+  > li:first-child {
+    margin-right: $space-1;
+    font-size: 20px;
     color: $neutral-600;
   }
-  :last-child {
-    margin-left: 4px;
+  > li:last-child {
+    margin-left: $space-1;
+    font-size: 20px;
   }
-  :nth-child(2) {
+  > li:nth-child(2) {
     background-color: $primary-300;
     font-weight: 500;
   }
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: $space-4;
+  .breadcrumb-item {
+    color: $neutral-600;
+  }
+  li:last-child .breadcrumb-item {
+    color: $neutral-900;
+    pointer-events: none;
+  }
+  li + li::before {
+    content: '/';
+    margin: 0 $space-2;
+    color: $neutral-300;
+    font-weight: 700;
+  }
+  @include pad {
+    font-size: 16px;
+    margin-top: $space-8;
+    li + li::before {
+      margin: 0 $space-3;
+    }
+  }
+}
+.product-item-title {
+  font-weight: 700;
+  margin-top: 8px;
+  margin-bottom: 0px;
+
+  @include pad {
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+}
+.product-item-price {
+  font-weight: 500;
 }
