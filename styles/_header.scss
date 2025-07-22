@@ -10,16 +10,20 @@ header {
     padding: 16px 0;
   }
 }
-nav {
+.nav-bar {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  > :last-child {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
   .nav-list {
     display: none;
     margin-left: $space-12;
-    
     li {
       padding: $space-3 0;
     }
