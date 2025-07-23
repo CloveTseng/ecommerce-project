@@ -37,36 +37,36 @@
   color: $neutral-900;
   padding: $space-8 $space-3;
   section + section {
-    margin-top: 32px;
-    padding-bottom: 32px;
+    margin-top: $space-8;
+    padding-bottom: $space-8;
     border-bottom: 1px solid $neutral-300;
     @include desktops {
-      padding-bottom: 48px;
-      margin-top: 48px;
+      padding-bottom: $space-12;
+      margin-top: $space-12;
     }
   }
   @include desktops {
-    padding: 64px 12px;
+    padding: $space-16 $space-3;
   }
   h3 {
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 16px;
+    margin-bottom: $space-4;
     @include desktops {
       font-size: 24px;
-      margin-bottom: 24px;
+      margin-bottom: $space-6;
     }
   }
 }
 .quote {
   background-color: $primary-100;
-  padding: 24px;
+  padding: $space-6;
   h3 {
     color: $primary-400;
-    padding-bottom: 12px;
+    padding-bottom: $space-3;
   }
   p + p {
-    padding-top: 4px;
+    padding-top: $space-1;
   }
   @include pad {
     text-align: center;
@@ -81,16 +81,16 @@
     }
   }
   h3 {
-    margin-top: 16px;
+    margin-top: $space-4;
     @include pad {
-      margin-top: 24px;
+      margin-top: $space-6;
       font-size: 24px;
     }
   }
   h4 {
     font-weight: 700;
     color: $primary-400;
-    padding-bottom: 12px;
+    padding-bottom: $space-3;
     span {
       display: block;
       @include pad {
@@ -99,13 +99,13 @@
     }
     @include desktops {
       font-size: 20px;
-      padding-bottom: 16px;
+      padding-bottom: $space-4;
     }
   }
   p + p {
-    margin-top: 12px;
+    margin-top: $space-3;
     @include desktops {
-      margin-top: 16px;
+      margin-top: $space-4;
     }
   }
 }
@@ -121,32 +121,32 @@
     line-height: 2;
   }
   li + li {
-    margin-top: 12px;
+    margin-top: $space-3;
   }
 }
 .idea {
   li + li {
-    margin-top: 12px;
+    margin-top: $space-3;
   }
   .idea-item {
     border-left: 3px solid $neutral-300;
-    padding-left: 12px;
+    padding-left: $space-3;
   }
 }
 .short-story {
   li {
     list-style-image: url(../public/arrow-up-right.svg);
     margin-left: 2em;
-    padding: 8px;
+    padding: $space-2;
   }
   .short-story-item {
     position: relative;
     color: $primary-400;
     font-weight: 500;
-    padding-bottom: 4px;
+    padding-bottom: $space-1;
   }
   li + li {
-    margin-top: 8px;
+    margin-top: $space-2;
   }
   .short-story-item::after {
     content: '';

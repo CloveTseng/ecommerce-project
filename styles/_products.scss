@@ -1,6 +1,10 @@
 .products {
   @include mw-1320;
   color: $neutral-900;
+  margin-bottom: $space-6;
+  @include pad {
+    margin-bottom: $space-12;
+  }
 }
 .products-title {
   font-size: 24px;
