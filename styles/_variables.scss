@@ -14,6 +14,12 @@
   margin-right: auto;
   align-items: center;
 }
+@mixin mw-856 {
+  max-width: 856px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
 
 $primary-100: #f5fee7;
 $primary-200: #E8FEC5;
