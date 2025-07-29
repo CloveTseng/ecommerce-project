@@ -1,4 +1,6 @@
 .btn {
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -6,17 +8,74 @@
   border-radius: $radius-sm;
   text-wrap: nowrap;
   border: 0px;
+  transition: .25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space-2;
+  cursor: pointer;
   @include pad {
     padding: $space-3 $space-6;
   }
+  .btn-icon {
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .btn-text {
+    display: block;
+  }
+}
+.btn:has(.btn-icon){
+  container-type: inline-size;
+  container-name: button;
+  .btn-text {
+    display: none;
+  }
+  @include button;
 }
 .btn-dark {
   color: $neutral-white;
   background-color: $neutral-900;
 }
+.btn-dark:hover {
+  filter: opacity(80%);
+  transition: filter .3s;
+}
+.btn-white {
+  color: $neutral-900;
+  background-color: $neutral-white;
+  border: 1px solid $neutral-white;
+  @include desktops {
+    border: 1px solid $neutral-900;
+  }
+}
+.btn-white:hover {
+  filter: opacity(50%);
+  transition: filter .3s;
+}
 .btn-primary {
   color: $neutral-900;
   background-color: $primary-300;
+}
+.btn-outline-primary {
+  color: $neutral-900;
+  border: 1px solid $neutral-300;
+  background-color: $neutral-white;
+  padding: 12px 24px;
+  &:hover {
+    border: 1px solid $neutral-600;
+  }
+  &.active {
+    border: 1px solid $neutral-900;
+  }
+  &.disabled {
+    border: 1px solid $neutral-300;
+    color: $neutral-300;
+    cursor: not-allowed;
+  }
 }
 .pagination {
   display: flex;
@@ -81,14 +140,61 @@
 }
 .product-item-title {
   font-weight: 700;
-  margin-top: 8px;
+  margin-top: $space-2;
   margin-bottom: 0px;
 
   @include pad {
-    margin-top: 12px;
-    margin-bottom: 4px;
+    margin-top: $space-3;
+    margin-bottom: $space-1;
   }
 }
 .product-item-price {
   font-weight: 500;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-2;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.color-picker-card {
+  width: 64px;
+  background-color: $neutral-white;
+  border: 1px solid $neutral-white;
+  padding: 0;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid $neutral-600;
+  }
+  &.active {
+    border: 1px solid $neutral-900;
+  }
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    filter: grayscale(80%);
+    &:hover {
+      border: 1px solid $neutral-white;
+    }
+  }
+}
+.color-label {
+  color: $neutral-600;
+  font-weight: 500;
+  padding-top: $space-1;
+  text-align: center;
+}
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }

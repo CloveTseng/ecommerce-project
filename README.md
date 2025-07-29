@@ -23,5 +23,11 @@
 > 元件
 
 ## 使用的套件、工具
-- [Next Google Fonts](https://fonts.google.com/)
-- [React Icons](https://www.npmjs.com/package/react-icons)
+- [Next Google Fonts](https://fonts.google.com/) | 網站的文字
+- [React Icons](https://www.npmjs.com/package/react-icons) | 網站使用的 icon
+- [Swiper](https://swiperjs.com/) | 處理商品輪播圖
+
+## Hook
+- useState
+- useEffect
+- useMediaQuery

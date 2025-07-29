@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     <>
       <div className='cta'>
         <h5 className='cta-text'>加入會員取得 9 折優惠</h5>
-        <Button text="馬上註冊" className="btn-dark" />
+        <Button text="馬上註冊" className="btn-dark" type="button" />
       </div>
       <footer>
         <div className='footer-link container'>
