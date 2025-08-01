@@ -1,11 +1,11 @@
 # 六角學院 2025 切版直播班 - VibeVerse 鞋子電商
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training-week8/main/product-image.png" alt="專案封面圖片" width="700">
+  <img src="https://firebasestorage.googleapis.com/v0/b/mobaocoffee.appspot.com/o/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2%202025-08-01%20193549.png?alt=media&token=13cccbd3-6105-44b4-aef4-5546bf5a5c0a" alt="專案封面圖片" width="700">
 </p>
 
 <p align="center">
-  一個使用 Next.js 和 Sass 打造的現代化鞋子電商網站。
+  一個使用 Next.js 和 Sass 打造的現代化鞋子電商網站
 </p>
 
 ---
@@ -14,7 +14,7 @@
 
 此專案的設計稿源於六角學院的「切版任務」，原始目標是完成靜態頁面的切版。為了深入學習與實踐業界主流框架，我主動選擇使用 Next.js (App Router) 進行重構與功能開發，將其從一個純粹的切版練習，擴展為一個具有動態路由與元件化架構的現代化網站應用。
 
--   **線上預覽 Demo:** [https://your-demo-link.com](https://your-demo-link.com)
+-   **線上預覽 Demo:** [https://ecommerce-project](https://ecommerce-project-alpha-jade.vercel.app/)
 
 ## 專案特色 (Features)
 
