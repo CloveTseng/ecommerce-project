@@ -1,0 +1,165 @@
+.story-banner {
+  height: 240px;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include desktops {
+    height: 400px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true');
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .banner-text {
+    text-align: center;
+    color: $neutral-white;
+    line-height: 1.2;
+    h1 {
+      font-size: 28px;
+      margin-bottom: $space-2;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    @include desktops {
+      h1 {
+        font-size: 40px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+}
+.story {
+  @include mw-856;
+  color: $neutral-900;
+  padding: $space-8 $space-3;
+  section + section {
+    margin-top: $space-8;
+    padding-bottom: $space-8;
+    border-bottom: 1px solid $neutral-300;
+    @include desktops {
+      padding-bottom: $space-12;
+      margin-top: $space-12;
+    }
+  }
+  @include desktops {
+    padding: $space-16 $space-3;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: $space-4;
+    @include desktops {
+      font-size: 24px;
+      margin-bottom: $space-6;
+    }
+  }
+}
+.quote {
+  background-color: $primary-100;
+  padding: $space-6;
+  border-radius: $radius-sm;
+  h3 {
+    color: $primary-400;
+    padding-bottom: $space-3;
+  }
+  p + p {
+    padding-top: $space-1;
+  }
+  @include pad {
+    text-align: center;
+  }
+}
+.intro {
+  img {
+    @include desktops {
+      min-width: 1076px;
+      margin-left: -110px;
+      margin-right: -110px;
+    }
+  }
+  h3 {
+    margin-top: $space-4;
+    @include pad {
+      margin-top: $space-6;
+      font-size: 24px;
+    }
+  }
+  h4 {
+    font-weight: 700;
+    color: $primary-400;
+    padding-bottom: $space-3;
+    span {
+      display: block;
+      @include pad {
+        display: inline;
+      }
+    }
+    @include desktops {
+      font-size: 20px;
+      padding-bottom: $space-4;
+    }
+  }
+  p + p {
+    margin-top: $space-3;
+    @include desktops {
+      margin-top: $space-4;
+    }
+  }
+}
+.history-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  li {
+    padding-left: 1.5em;
+    text-indent: -1em;
+  }
+  li::marker {
+    font-size: 8px;
+    line-height: 2;
+  }
+  li + li {
+    margin-top: $space-3;
+  }
+}
+.idea {
+  li + li {
+    margin-top: $space-3;
+  }
+  .idea-item {
+    border-left: 3px solid $neutral-300;
+    padding-left: $space-3;
+  }
+}
+.short-story {
+  li {
+    list-style-image: url(../public/arrow-up-right.svg);
+    margin-left: 2em;
+    padding: $space-2;
+  }
+  .short-story-item {
+    position: relative;
+    color: $primary-400;
+    font-weight: 500;
+    padding-bottom: $space-1;
+  }
+  li + li {
+    margin-top: $space-2;
+  }
+  .short-story-item::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: $primary-400;
+    bottom: 0;
+    left: 0;
+    transition: width .3s ease;
+  }
+  .short-story-item:hover::after {
+    width: 100%;
+  }
+}

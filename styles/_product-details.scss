@@ -1,0 +1,136 @@
+.product-detail {
+  @include mw-1320;
+  color: $neutral-900;
+  align-items: start;
+  @include pad {
+    display: flex;
+  }
+  .cta {
+    margin-top: $space-6;
+    @include pad {
+    margin-top: $space-10;
+    }
+  }
+}
+.detail-content {
+  display: grid;
+  gap: $space-8;
+  @include pad {
+    margin-left: $space-6;
+    min-width: 45%;
+  }
+  @include desktops {
+    min-width: 526px;
+  }
+}
+.product-intro {
+  padding-top: $space-2;
+  .product-detail-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-top: $space-2;
+  }
+  .product-price {
+    padding-top: $space-3;
+    font-size: 16px;
+    color: $primary-400;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      padding-left: $space-2;
+      text-decoration: line-through;
+      color: $neutral-500;
+    }
+  }
+  .product-detail-intro {
+    padding-top: $space-3;
+    text-align: justify;
+  }
+  
+  @include pad {
+    padding-top: 0px;
+    .breadcrumb {
+      margin-top: 0;
+    }
+  }
+}
+.form-style {
+  display: grid;
+  gap: $space-6;
+}
+.product-color {
+  .product-color-picker {
+    margin-top: $space-2;
+    display: flex;
+    gap: $space-2;
+  }
+}
+.product-sizes {
+  .size-lists {
+    margin-top: $space-2;
+    display: grid;
+    gap: $space-2;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+
+    @include desktops {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+  .quantity {
+    color: $danger-300;
+    font-size: 14px;
+    padding-top: $space-2;
+  }
+}
+.button-group {
+  display: grid;
+  gap: $space-2;
+  grid-template-columns:  1fr auto;
+  .btn-add-cart {
+    grid-area: A;
+  }
+  .btn-add-favorites {
+    grid-area: B;
+  }
+  grid-template-areas: "A B";
+
+  @include desktops {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "B A";
+  }
+}
+.product-info {
+  .info-section {
+    border-bottom: 1px solid $neutral-300;
+    padding: $space-3 0;
+    h6 {
+      font-weight: 500;
+      margin-bottom: $space-1;
+    }
+    p {
+      color: $neutral-600;
+    }
+  }
+}
+.product-slider {
+  @include mw-1320;
+  padding: $space-10 0px $space-10 $space-3;
+  margin-bottom: $space-6;
+  h5 {
+    font-size: 20px;
+    padding: $space-2 0;
+    margin-bottom: $space-4;
+    font-weight: 700;
+  }
+  @include pad {
+    padding: $space-12 0;
+    margin-bottom: $space-10;
+    h5 {
+      font-size: 24px;
+      padding: 10px 0;
+    }
+  }
+} 

@@ -8,8 +8,21 @@
     @content;
   }
 }
+@mixin button {
+  @container (min-width: 50px) {
+    .btn-text {
+      display: block;
+    }
+  }
+}
 @mixin mw-1320 {
   max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+@mixin mw-856 {
+  max-width: 856px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -21,9 +34,11 @@ $primary-300: #C0FA73;
 $primary-400: #57a203;
 $neutral-100: #f8f9fa;
 $neutral-300: #dee2e6;
+$neutral-500: #ADB5BD;
 $neutral-600: #6c757d;
 $neutral-900: #212529;
 $neutral-white: #fff;
+$danger-300: #D74F4F;
 
 $space-1: 4px;
 $space-2: 8px;

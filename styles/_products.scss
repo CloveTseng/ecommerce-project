@@ -1,6 +1,10 @@
 .products {
   @include mw-1320;
   color: $neutral-900;
+  margin-bottom: $space-6;
+  @include pad {
+    margin-bottom: $space-12;
+  }
 }
 .products-title {
   font-size: 24px;
@@ -28,9 +32,6 @@
 .products-list {
   display: grid;
   gap: $space-4;
-  li:first-child .product-item {
-    color: $primary-400;
-  }
 }
 .product-item {
   display: block;
@@ -38,6 +39,9 @@
   padding: $space-2 0;
   &:hover {
     background-color: $neutral-100;
+  }
+  &:active {
+    color: $primary-400;
   }
 }
 .products-cards {

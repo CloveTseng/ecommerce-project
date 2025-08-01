@@ -1,0 +1,363 @@
+main {
+  color: $neutral-900;
+}
+.index-banner {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  .index-banner-content {
+    padding-left: $space-6;
+  }
+  h1, p {
+    font-size: 48px;
+    color: $neutral-white;
+    line-height: 1.2;
+  }
+  p {
+    font-size: 20px;
+    padding-top: $space-2;
+  }
+  .btn-primary {
+    margin-top: $space-8;
+    padding: $space-3 $space-6;
+  }
+  @include pad {
+    height: 800px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true');
+    .index-banner-content {
+      padding-left: 200px;
+    }
+    h1 {
+      font-size: 64px;
+    }
+    p {
+      font-size: 28px;
+      padding-top: $space-4;
+    }
+    .btn-primary {
+      margin-top: $space-12;
+    }
+  }
+}
+.index-new-products {
+  @include mw-1320;
+  padding: $space-10 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  .title-group {
+    display: grid;
+    gap: $space-2;
+    margin-bottom: $space-6;
+  }
+  .title, .sub-title {
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .sub-title {
+    font-size: 24px;
+  }
+  @include desktops {
+    padding: $space-16 0;
+    .title-group {
+      gap: $space-3;
+      margin-bottom: $space-8;
+    }
+    .title {
+      font-size: 48px;
+    }
+    .sub-title {
+      font-size: 32px;
+    }
+  }
+  .new-product-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: $space-3;
+    grid-row-gap: $space-6;
+    padding-left: $space-3;
+    padding-right: $space-3;
+    h6 {
+      line-height: 1.2;
+      padding-top: $space-2;
+    }
+    p {
+      font-weight: 500;
+    }
+    @include pad {
+      grid-column-gap: $space-6;
+      grid-row-gap: $space-10;
+      h6 {
+        font-size: 20px;
+        padding-top: $space-3;
+      }
+    }
+  }
+}
+.index-top-sale {
+  @include mw-1320;
+  padding-top: $space-10;
+  padding-bottom: $space-10;
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    padding: 6px 0 6px $space-3;
+    margin-bottom: $space-3;
+  }
+  .product-slider-container {
+    padding-left: $space-3;
+  }
+  @include pad {
+    padding-top: $space-16;
+    padding-bottom: $space-16;
+  }
+  .slider-card {
+    position: relative;
+  }
+  .top-sale-tag {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: $primary-400;
+    background-color: $primary-100;
+    padding: $space-2 $space-3;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+.index-cta {
+  margin-top: $space-6;
+  margin-bottom: $space-6;
+  padding-top: $space-16;
+  padding-bottom: $space-16;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded-sm.png?raw=true');
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+  overflow: hidden;
+  .cta-title-group {
+    display: grid;
+    gap: $space-2;
+    text-align: center;
+    font-size: 32px;
+    color: $neutral-white;
+    line-height: 1.2;
+    .cta-mark {
+      font-size: 28px;
+      color: $primary-300
+    }
+  }
+  .slogan {
+    text-align: center;
+    font-size: 20px;
+    color: $neutral-white;
+    line-height: 1.2;
+    padding-top: $space-4;
+  }
+  .sub-slogan {
+    padding-top: $space-6;
+    text-align: center;
+    color: $neutral-500;
+    .slogan-breakpoint {
+      display: block;
+      padding-top: $space-1;
+      .sign {
+        display: none;
+      }
+    }
+  }
+  .cta-button {
+    padding-top: $space-8;
+    text-align: center;
+    .btn-primary {
+      padding: $space-3 $space-6;
+    }
+  }
+  @include pad {
+    height: 470px;
+  }
+  @include desktops {
+    height: 470px;
+    background-size: cover;
+    margin-top: $space-12;
+    margin-bottom: $space-12;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true');
+    .cta-title-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: $space-6;
+      .cta-title {
+        font-size: 48px;
+      }
+      .cta-mark {
+        font-size: 40px;
+      }
+    }
+    .slogan {
+      font-size: 32px;
+    }
+    .sub-slogan {
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: $space-8;
+      .slogan-breakpoint {
+        padding-top: 0;
+        .sign {
+          display: inline;
+        }
+        display: inline-block;
+      }
+    }
+    .cta-button {
+      padding-top: $space-12;
+    }
+  }
+}
+.index-cta::before {
+  content: '';
+  display: block;
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/14f2133cdd6d831a3acb833025093d4fcbffc381/2025-week3-4/star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 32px;
+  left: -20px;
+  @include desktops {
+    top: 68px;
+    left: 20%;
+  }
+}
+.index-cta::after {
+  content: '';
+  display: block;
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/14f2133cdd6d831a3acb833025093d4fcbffc381/2025-week3-4/sparkle.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 76px;
+  height: 64px;
+  bottom: 104px;
+  right: -28px;
+  @include desktops {
+    bottom: 50px;
+    right: 20%;
+  }
+}
+.index-series {
+  @include mw-1320;
+  padding-top: $space-10;
+  padding-bottom: $space-10;
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: $space-4;
+    @include pad {
+      font-size: 32px;
+    }
+  }
+  .series-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $space-3;
+    .series-item {
+      position: relative;
+      transition: display 5s;
+      cursor: pointer;
+      img {
+        object-fit: cover;
+      }
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s ease, visibility .3s ease;
+      }
+      &:hover {
+        .image-overlay, .series-text {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    .series-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 1.2;
+      color: $neutral-white;
+      text-align: center;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease, visibility .3s ease;
+      h6 + h6 {
+        padding-top: $space-2;
+      }
+      @include pad {
+        font-size: 28px;
+      }
+    }
+    @include desktops {
+      grid-template-columns: repeat(4, 1fr);
+      gap: $space-6;
+    }
+  }
+}
+.index-idea {
+  @include mw-1320;
+  padding: $space-10 0 $space-10 $space-3;
+  margin-bottom: $space-6;
+  h2 {
+    font-size: 24px;
+    line-height: 1.2;
+    padding-bottom: $space-4;
+  }
+  @include pad {
+    padding: $space-16 $space-3;
+    margin-bottom: $space-12;
+    h2 {
+      font-size: 32px;
+    }
+  }
+  .index-idea-bento {
+    display: grid;
+    gap: $space-2;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    img:nth-child(5){
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    img:nth-child(6){
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+}

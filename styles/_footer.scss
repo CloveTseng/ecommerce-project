@@ -4,7 +4,6 @@
   align-items: center;
   background-color: $primary-200;
   padding: $space-6;
-  margin-top: $space-6;
   .cta-text {
     font-size: 20px;
     text-wrap: nowrap;
@@ -15,9 +14,6 @@
   }
   .btn {
     margin-left: $space-4;
-  }
-  @include desktops {
-    margin-top: $space-12;
   }
 }
 footer {
