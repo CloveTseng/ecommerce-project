@@ -46,8 +46,8 @@ const IndexIdeaBento = () => {
   const isDesktop = useMediaQuery(768);
   if (isDesktop) {
     return (
-      <div className='index-idea-bento'>{ ideaImages.map((image) => (
-        <img src={ image.src} alt={image.alt} style={{width: '100%'}} />
+      <div className='index-idea-bento'>{ ideaImages.map((image, index) => (
+        <img key={index} src={ image.src} alt={image.alt} style={{width: '100%'}} />
       )) }</div>
     )
   }
