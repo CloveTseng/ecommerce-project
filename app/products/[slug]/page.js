@@ -14,7 +14,6 @@ import { BsHandbag } from "react-icons/bs";
 import { BsHeart } from "react-icons/bs";
 import { getProducts } from '@/lib/data';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import { use } from 'react';
 
 export default function ProductPage({ params }) {

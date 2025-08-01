@@ -32,9 +32,6 @@
 .products-list {
   display: grid;
   gap: $space-4;
-  li:first-child .product-item {
-    color: $primary-400;
-  }
 }
 .product-item {
   display: block;
@@ -42,6 +39,9 @@
   padding: $space-2 0;
   &:hover {
     background-color: $neutral-100;
+  }
+  &:active {
+    color: $primary-400;
   }
 }
 .products-cards {

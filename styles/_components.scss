@@ -51,14 +51,18 @@
   @include desktops {
     border: 1px solid $neutral-900;
   }
-}
-.btn-white:hover {
-  filter: opacity(50%);
-  transition: filter .3s;
+  &:hover {
+    filter: opacity(50%);
+    transition: filter .3s;
+  }
 }
 .btn-primary {
+  display: inline-block;
   color: $neutral-900;
   background-color: $primary-300;
+  &:hover {
+    filter: opacity(80%);
+  }
 }
 .btn-outline-primary {
   color: $neutral-900;

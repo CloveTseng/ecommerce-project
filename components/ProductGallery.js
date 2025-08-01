@@ -1,7 +1,6 @@
 'use client';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 const productImages = [
@@ -29,7 +28,7 @@ const ProductGallery = () => {
     )
   }
   return (
-    <Swiper spaceBetween={8} slidesPerView={1} pagination={{clickable: true}} navigation modules={[Pagination]} >
+    <Swiper spaceBetween={8} slidesPerView={1.1} pagination={{clickable: true}} navigation >
       { productImages.map((image, index) => (
         <SwiperSlide key={ index } >
           <img src={ image.src} alt={image.alt} style={{width: '100%'}} />
